@@ -1,10 +1,10 @@
-项目说明
+#项目说明
 
 本项目使用hyperf框架编写的弹幕服务器程式，基于swoole扩展实现了长连接，房间，弹幕等操作，内部逻辑简单，仅供学习参考，如果对你的学习有所帮助，请帮我点一个star吧 (^-^)
 
-相关配置
+#相关配置
 关注cpnfig/autoload/server.php
-其他省略
+（其他省略）
 ```
 [
     'name' => 'ws',
@@ -25,14 +25,14 @@
 ],
 ```
 
-项目主逻辑代码位置：app/controller/WebSocketController.php
+#项目主逻辑代码位置：app/controller/WebSocketController.php
 
-启动入口在bin目录下
+#启动入口在bin目录下
 
 php hyperf.php start  如果正式项目里启动命令可以换成 php hyperf.php start  -D  常驻内存
 
 
-访问参数形式为json：这里参数不包含业务逻辑，如需绑定自己的业务逻辑请自行添加参数及服务端逻辑
+#访问参数形式为json：这里参数不包含业务逻辑，如需绑定自己的业务逻辑请自行添加参数及服务端逻辑
 ```
 {
 "action":"login",
@@ -41,7 +41,7 @@ php hyperf.php start  如果正式项目里启动命令可以换成 php hyperf.p
 ```
 
 
-# 介绍
+# 框架介绍
 
 Hyperf 是基于 `Swoole 4.3+` 实现的高性能、高灵活性的 PHP 持久化框架，内置协程服务器及大量常用的组件，性能较传统基于 `PHP-FPM` 的框架有质的提升，提供超高性能的同时，也保持着极其灵活的可扩展性，标准组件均以最新的 [PSR 标准](https://www.php-fig.org/psr) 实现，基于强大的依赖注入设计可确保框架内的绝大部分组件或类都是可替换的。
    
