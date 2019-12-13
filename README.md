@@ -5,6 +5,7 @@
 相关配置
 关注cpnfig/autoload/server.php
 其他省略
+```
 [
     'name' => 'ws',
     'type' => Server::SERVER_WEBSOCKET,
@@ -22,6 +23,7 @@
     ]
 
 ],
+```
 
 项目主逻辑代码位置：app/controller/WebSocketController.php
 
@@ -31,12 +33,12 @@ php hyperf.php start  如果正式项目里启动命令可以换成 php hyperf.p
 
 
 访问参数形式为json：这里参数不包含业务逻辑，如需绑定自己的业务逻辑请自行添加参数及服务端逻辑
-
+```
 {
 "action":"login",
 "room_id":"123"
 }
-
+```
 
 
 # 介绍
